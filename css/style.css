@@ -1,0 +1,148 @@
+@font-face {
+    font-family: Font;
+    src: url(../fonts/Inika-Regular.ttf);
+}
+
+body{
+    margin: 0;
+    background-color: rgb(155, 219, 144);
+    max-width: 100vw;
+    height: 100vh;
+    transition: 0.25s;
+}
+
+div a{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.font{
+    font-family: Font;
+    color: rgb(228, 244, 225);
+    font-weight: lighter;
+}
+
+.siteLogo{
+    font-size: 48px;
+    margin-left: 150px;
+    margin-top: 46px;
+}
+
+.nextSite{
+    font-size: 24px;
+    width: auto;
+    height: fit-content;
+    margin-right: 150px;
+    margin-top: 63px;
+    transition: 0.25s;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.crazyHover{
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.crazyHover:hover{
+    scale: 1.1;
+    text-shadow: 0px 5px 5px rgb(0, 0, 0, 0.25);
+    transition: 0.25s;
+}
+
+.headding{
+    font-size: 150px;
+    margin: auto;
+    margin-top: 250px;
+    width: fit-content;
+}
+
+.underline{
+    width: 1000px;
+    height: 5px;
+    background-color: rgb(228, 244, 225);
+    margin: auto;
+    margin-top: 35px;
+}
+
+.welcome{
+    font-size: 32px;
+    margin: auto;
+    width: fit-content;
+    margin-top: 25px;
+}
+
+.subheadding, .subheaddingTwo{
+    font-size: 24px;
+    margin-left: 254px;
+    margin-top: 297px;
+    width: fit-content;
+}
+
+.imgOne{
+    border-radius: 10px;
+    margin-right: 225px;
+    margin-top: 50px;
+}
+
+.bottomText{
+    font-size: 24px;
+    margin: auto;
+    margin-top: 190px;
+    padding-bottom: 40px;
+    width: fit-content;
+}
+
+@media (max-width: 500px) {
+    .flex{
+        flex-direction: column;
+        text-align: center;
+    }
+    .siteLogo, .nextSite{
+        margin: 0;
+    }
+    .siteLogo{
+        margin-top: 46px;
+    }
+    .nextSite{
+        margin-top: 56px;
+    }
+    .headding{
+        font-size: 50px;
+        text-align: center;
+        width: 315px;
+    }
+    .underline{
+        width: 250px;
+    }
+    .welcome{
+        font-size: 20px;
+    }
+    .secondDiv{
+        flex-direction: column-reverse;
+    }
+    .subheadding, .subheaddingTwo{
+        margin: 0;
+        text-align: center;
+        width: 340px;
+        font-size: 16px;
+        margin: auto;
+        margin-top: 297px;
+    }
+    .subheaddingTwo{
+        margin-top: 40px;
+    }
+    .imgOne{
+        margin: auto;
+        margin-top: 80px;
+        width: 200px;
+        height: 150px;
+    }
+    .bottomText{
+        font-size: 20px;
+    }
+}
